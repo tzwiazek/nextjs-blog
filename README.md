@@ -8,3 +8,5 @@
 - eslint
 - tsconfig
 - mobile-first
+- PWA
+- Vercel
