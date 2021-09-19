@@ -1,0 +1,29 @@
+.footer {
+  margin-top: 50px;
+}
+
+.logo {
+  color: #3dd44f;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 0 30px;
+}
+
+.description {
+  color: #535865;
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 0 30px;
+}
+
+.copyright {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: #535865;
+  font-size: 14px;
+  padding: 20px 0;
+  border-top: 1px solid #0d1a35;
+  margin-top: 50px;
+}

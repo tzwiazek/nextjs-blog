@@ -1,0 +1,82 @@
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 15px 30px;
+}
+
+.nav ul {
+  width: 100%;
+  padding: 0;
+  margin: 30px 0 0 0;
+}
+
+.nav ul li {
+  display: flex;
+}
+
+.nav ul li a {
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 16px 12px;
+  cursor: pointer;
+}
+
+.logo {
+  color: #3dd44f;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.hamburger {
+  opacity: 0.5;
+  cursor: pointer;
+  transition: opacity 0.25s linear;
+  width: clamp(1.5rem, 2vw + 1.1rem, 6rem);
+  height: clamp(2rem, 1.4vw + 1.7rem, 5rem);
+  display: flex;
+  align-items: center;
+}
+
+.hamburger div,
+.hamburger div:after,
+.hamburger div:before {
+  background-color: #fafafa;
+  border-radius: 10px;
+  width: clamp(1.5rem, 2vw + 1.1rem, 6rem);
+  height: clamp(0.2rem, 0.3vw + 0.1rem, 0.8rem);
+  transition: all 0.15s linear;
+}
+
+.hamburger div:before,
+.hamburger div:after {
+  content: '';
+  position: absolute;
+}
+
+.hamburger div:before {
+  transform: translateY(-200%);
+}
+
+.hamburger div:after {
+  transform: translateY(200%);
+}
+
+.hamburger.open div {
+  background: transparent;
+}
+
+.hamburger.open div:before {
+  transform: rotate(45deg);
+}
+
+.hamburger.open div:after {
+  transform: rotate(-45deg);
+}
+
+.main {
+  margin-top: 50px;
+}
