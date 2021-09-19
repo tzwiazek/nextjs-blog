@@ -12,3 +12,5 @@ https://nextjs-blog-seven-sand-25.vercel.app/
 - mobile-first
 - PWA
 - Vercel
+
+![](github_images/nextjs-blog-lighthouse.png)
