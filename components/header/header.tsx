@@ -31,16 +31,18 @@ export const Header = ({ article }: { article: ArticleInterface }) => {
           alt={article.title}
         />
 
-        <div className={styles.topRead}>
-          <p>Latest article</p>
-          <span className="date">{new Date(article.date).toLocaleDateString()}</span>
-        </div>
+        <div>
+          <div className={styles.topRead}>
+            <p>Latest article</p>
+            <span className="date">{new Date(article.date).toLocaleDateString()}</span>
+          </div>
 
-        <h2 className={styles.h2}>{article.title}</h2>
-        <div className={styles.readMore}>
-          <Link href={`/articles/${article.slug}`}>
-            <a>Read more</a>
-          </Link>
+          <h2 className={styles.h2}>{article.title}</h2>
+          <div className={styles.readMore}>
+            <Link href={`/articles/${article.slug}`}>
+              <a>Read more</a>
+            </Link>
+          </div>
         </div>
       </div>
     </header>

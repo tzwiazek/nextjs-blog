@@ -77,6 +77,11 @@
   border-left: 80px solid transparent;
 }
 
+.categoryContainer {
+  display: block;
+  width: 100%;
+}
+
 .article {
   width: 70%;
   margin: 25px 0;
@@ -99,4 +104,28 @@
   font-size: 1.2rem;
   line-height: 1.5;
   letter-spacing: 0.5px;
+}
+
+@media screen and (min-width: 1024px) {
+  .posts,
+  .posts.bg {
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .posts.bg {
+    padding: 75px 10%;
+  }
+
+  .posts:not(.bg) {
+    padding: 200px 10%;
+  }
+
+  .article {
+    width: 30%;
+  }
+
+  .posts .category {
+    margin-bottom: 30px;
+  }
 }

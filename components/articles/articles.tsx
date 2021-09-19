@@ -9,7 +9,7 @@ export const Articles = ({ articles, bg }: ArticlesInterface) => {
     <>
       <section className={`${styles.posts} ${bg ? styles.bg : ''}`}>
         {bg && (
-          <>
+          <div className={styles.categoryContainer}>
             <h2>Articles Tag3</h2>
             <div className={styles.category}>
               <div className={styles.readMore}>
@@ -18,7 +18,7 @@ export const Articles = ({ articles, bg }: ArticlesInterface) => {
                 </Link>
               </div>
             </div>
-          </>
+          </div>
         )}
 
         {articles.map((article: ArticleInterface) => {
